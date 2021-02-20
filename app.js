@@ -10,7 +10,7 @@ const cors = require("cors");
 require("dotenv").config();
 
 mongoose.connect(
-    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cacheddata.hvjcn.mongodb.net/Products-API?retryWrites=true&w=majority`,
+    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_URL}`,
     { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true}
 );
 
